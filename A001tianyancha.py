@@ -5,7 +5,9 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 path = os.getcwd().replace('\\','/')+'/'
-
+keyword = '中信' # 输入查询公司的名称，支持模糊搜索和简称，如“中信”
+username = '' # 输入：天眼查注册名（手机号）
+password = '' # 输入：天眼查注册密码
 
 def open_browser(url):
     driver = webdriver.Chrome('D:/python/docu/chromedriver.exe')
